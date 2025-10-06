@@ -8,6 +8,7 @@ return {
 			fish_lsp = {},
 			lua_ls = {},
 			markdown_oxide = {},
+			pylsp = {},
 		},
 	},
 }
