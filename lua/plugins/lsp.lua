@@ -10,12 +10,16 @@ return {
 			markdown_oxide = {},
 			pylsp = {},
 			texlab = {
-				build = {
-					executable = "latexmk",
-					args = { "-pdf", "-interaction=nonstopmode" },
-					onSave = true,
+				settings = {
+					texlab = {
+						build = {
+							executable = "latexmk",
+							args = { "-pdf", "-interaction=nonstopmode", "%f" },
+							onSave = true,
+						},
+						chktex = { onOpenAndSave = true },
+					},
 				},
-				chktex = { onOpenAndSave = true },
 			},
 		},
 	},
